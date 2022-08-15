@@ -1,9 +1,15 @@
-
-import './App.css';
+import './styles/styles.scss'
 import { Component } from 'react';
-
-class App extends Component{
-  
+import Main from './components/main';
+class App extends Component {
+     constructor(props) {
+          super(props);
+     }
+     render() {
+          return(
+               <Main visible={true} />
+          )
+     }
 }
 
 export default App;
