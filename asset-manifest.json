@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.601fa0ad.css",
-    "main.js": "/static/js/main.58385c25.js",
-    "static/js/787.e53c67a5.chunk.js": "/static/js/787.e53c67a5.chunk.js",
-    "index.html": "/index.html",
-    "main.601fa0ad.css.map": "/static/css/main.601fa0ad.css.map",
-    "main.58385c25.js.map": "/static/js/main.58385c25.js.map",
-    "787.e53c67a5.chunk.js.map": "/static/js/787.e53c67a5.chunk.js.map"
+    "main.css": "/silmarillion/static/css/main.601fa0ad.css",
+    "main.js": "/silmarillion/static/js/main.542296f6.js",
+    "static/js/787.e53c67a5.chunk.js": "/silmarillion/static/js/787.e53c67a5.chunk.js",
+    "index.html": "/silmarillion/index.html",
+    "main.601fa0ad.css.map": "/silmarillion/static/css/main.601fa0ad.css.map",
+    "main.542296f6.js.map": "/silmarillion/static/js/main.542296f6.js.map",
+    "787.e53c67a5.chunk.js.map": "/silmarillion/static/js/787.e53c67a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.601fa0ad.css",
-    "static/js/main.58385c25.js"
+    "static/js/main.542296f6.js"
   ]
 }
