@@ -24,6 +24,7 @@ import finrod_img from '../assets/finrod.jpg'
 import maedhros_img from '../assets/maedhros.jpg'
 import thingol_img from '../assets/thingol.jpg'
 import turin_img from '../assets/turin.jpg'
+
 const data = {
      "ancalagon": {
           shade: -2,
@@ -180,7 +181,7 @@ const data = {
 function card(title, method) {
      let shade = 'secondary';
 
-     switch(data[title].shade){
+     switch (data[title].shade) {
           case 1: {
                shade = 'success';
                break;
@@ -256,13 +257,13 @@ class Main extends Component {
 
      render() {
           return (
-               <div className="container-fluid mx-5">
-                    <div className=''>Score: {this.state.score} High-score: {this.state.highest_score}</div>
+               <div className="container-fluid p-5">
+                    <h3><span class="badge rounded-pill text-bg-primary">Score: {this.state.score}</span></h3>
+                    <h3><span class="badge rounded-pill text-bg-info">High Score: {this.state.highest_score}</span></h3>
                     <div className="row row-cols-1 row-cols-md-5 g-4 p-3">
                          {this.getState().map(title => card(title, this.add_title))}
                     </div>
                </div>)
-
      }
 };
 
