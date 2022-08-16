@@ -1,4 +1,3 @@
-import './styles/styles.scss'
 import { Component } from 'react';
 class Headers extends Component {
      constructor(props) {
