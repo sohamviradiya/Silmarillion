@@ -1,5 +1,4 @@
 import { Component } from 'react';
-
 const data = {
      "ancalagon": {
           shade: -2,
