@@ -4,4 +4,4 @@
 
 ### [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-memory-card)
 
-### [Click Here to Play!](https://sohamviradiya.github.io/silmarillion/)
+### [Click Here to Play!](https://sohamviradiya.github.io/Silmarillion/)
