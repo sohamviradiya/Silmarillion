@@ -257,11 +257,11 @@ class Main extends Component {
 
      render() {
           return (
-               <div className="container-fluid p-5">
-                    <h3><span class="badge rounded-pill text-bg-primary">Score: {this.state.score}</span></h3>
-                    <h3><span class="badge rounded-pill text-bg-info">High Score: {this.state.highest_score}</span></h3>
+               <div className="container-fluid p-5 mt-5">
+                    <h3><span className="badge rounded-pill text-bg-primary">Score: {this.state.score}</span></h3>
+                    <h3><span className="badge rounded-pill text-bg-info">High Score: {this.state.highest_score}</span></h3>
                     <div className="row row-cols-1 row-cols-md-5 g-4 p-3">
-                         {this.getState().map(title => card(title, this.add_title))}
+\{this.getState().map(title => card(title, this.add_title))}
                     </div>
                </div>)
      }
