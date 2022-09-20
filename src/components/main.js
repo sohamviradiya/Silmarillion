@@ -24,10 +24,13 @@ import finrod_img from '../assets/finrod.jpg'
 import maedhros_img from '../assets/maedhros.jpg'
 import thingol_img from '../assets/thingol.jpg'
 import turin_img from '../assets/turin.jpg'
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { addDoc, collection, getFirestore, onSnapshot } from 'firebase/firestore';
 import { user_data } from '../firebase';
 const colref = collection(getFirestore(), "Users");
-let scores = () =>  (user_data.map((element) => (element.value)));
+let scores = () => (user_data.map((element) => (element.value)));
+onSnapshot(colref, () => {
+     console.log(scores());
+});
 const data = {
      "ancalagon": {
           shade: -2,
@@ -255,8 +258,9 @@ class Main extends Component {
                current_set.add(title);
                current_score++;
           }
-          console.log(scores());
+          
           this.setState({ selected: current_set, score: current_score, highest_score: Math.max(...scores()) });
+          
           this.shuffle();
      }
 
