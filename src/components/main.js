@@ -24,7 +24,10 @@ import finrod_img from '../assets/finrod.jpg'
 import maedhros_img from '../assets/maedhros.jpg'
 import thingol_img from '../assets/thingol.jpg'
 import turin_img from '../assets/turin.jpg'
-
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { user_data } from '../firebase';
+const colref = collection(getFirestore(), "Users");
+let scores = () =>  (user_data.map((element) => (element.value)));
 const data = {
      "ancalagon": {
           shade: -2,
@@ -232,8 +235,7 @@ class Main extends Component {
           this.setState({ current: Object.keys(data).sort(() => Math.random() - 0.5).slice(0, 10) });
      }
 
-     add_title = (title) => {
-
+      add_title = async (title) => {
           let current_set = this.state.selected;
           let current_score = this.state.score;
           if (current_score > this.state.highest_score) {
@@ -244,14 +246,17 @@ class Main extends Component {
           if (this.state.selected.has(title)) {
                console.log('Game Over');
                current_set.clear();
+               await addDoc(colref, {
+                    value: current_score
+               })
                current_score = 0;
           }
           else {
                current_set.add(title);
                current_score++;
           }
-          this.setState({ selected: current_set, score: current_score });
-          console.log(this.state.selected);
+          console.log(scores());
+          this.setState({ selected: current_set, score: current_score, highest_score: Math.max(...scores()) });
           this.shuffle();
      }
 
