@@ -223,12 +223,17 @@ function card(title, method) {
 class Main extends Component {
      constructor(props) {
           super(props);
-          this.state = {
-               titles: Object.keys(data),
-               current: Object.keys(data).sort(() => Math.random() - 0.5).slice(0, 10),
-               selected: new Set(),
-               score: 0,
-               highest_score: 0
+          if(localStorage.getItem('state')){
+               this.state=localStorage.getItem('state');
+          }
+          else{
+               this.state = {
+                    titles: Object.keys(data),
+                    current: Object.keys(data).sort(() => Math.random() - 0.5).slice(0, 10),
+                    selected: new Set(),
+                    score: 0,
+                    highest_score: 0
+               }
           }
      }
 
@@ -258,10 +263,9 @@ class Main extends Component {
                current_set.add(title);
                current_score++;
           }
-          
           this.setState({ selected: current_set, score: current_score, highest_score: Math.max(...scores()) });
-          
           this.shuffle();
+          localStorage.setItem('state', state);
      }
 
      render() {
