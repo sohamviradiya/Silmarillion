@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Silmarillion/static/css/main.c4968cbb.css",
-    "main.js": "/Silmarillion/static/js/main.0219b7cc.js",
+    "main.css": "/Silmarillion/static/css/main.9288e465.css",
+    "main.js": "/Silmarillion/static/js/main.318ded29.js",
     "static/js/787.e53c67a5.chunk.js": "/Silmarillion/static/js/787.e53c67a5.chunk.js",
     "static/media/ingwe.jpg": "/Silmarillion/static/media/ingwe.ac93ccfaa489626c68dd.jpg",
     "static/media/gothmog.jpg": "/Silmarillion/static/media/gothmog.d8668b2f24bb44125f25.jpg",
@@ -29,12 +29,12 @@
     "static/media/feanor.jpg": "/Silmarillion/static/media/feanor.2152bac87213bc89cd44.jpg",
     "static/media/turin.jpg": "/Silmarillion/static/media/turin.5861c428c6f579c5ae0f.jpg",
     "index.html": "/Silmarillion/index.html",
-    "main.c4968cbb.css.map": "/Silmarillion/static/css/main.c4968cbb.css.map",
-    "main.0219b7cc.js.map": "/Silmarillion/static/js/main.0219b7cc.js.map",
+    "main.9288e465.css.map": "/Silmarillion/static/css/main.9288e465.css.map",
+    "main.318ded29.js.map": "/Silmarillion/static/js/main.318ded29.js.map",
     "787.e53c67a5.chunk.js.map": "/Silmarillion/static/js/787.e53c67a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4968cbb.css",
-    "static/js/main.0219b7cc.js"
+    "static/css/main.9288e465.css",
+    "static/js/main.318ded29.js"
   ]
 }
